@@ -1,0 +1,7 @@
+{
+  "name": "topdecked-unified",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

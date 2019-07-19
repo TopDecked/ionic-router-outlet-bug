@@ -1,0 +1,16 @@
+  <ion-toolbar class="primary" mode=md>
+    <ion-title>Metagame</ion-title>
+
+    <ion-buttons slot=end>
+      <ion-button size=small color=primary fill=solid [routerLink]="[{ outlets: { detail: ['recent-events'] } }]">
+        Works Once
+      </ion-button>
+      <ion-button size=small color=secondary [routerLink]="['/metagame',{ outlets: { detail: ['recent-events'] } }]">
+        Works Every Time
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <ng-container padding>
+    METAGAME
+  </ng-container>

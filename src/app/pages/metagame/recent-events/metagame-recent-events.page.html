@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar mode=md>
+    <ion-buttons slot="start">
+    </ion-buttons>
+    <ion-title> Recent Events </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="closeDetailOutlet()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-segment #segment mode=md>
+    <ion-segment-button *ngFor="let seg of ['general', 'synergies']" [value]="seg" mode=md>
+      <ion-label>{{ seg | titlecase }}</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</ion-header>
+
+<ion-content>
+
+  <div padding>
+    Details and stats go here.
+  </div>
+</ion-content>
